@@ -10,7 +10,7 @@ import { RegistroComponent } from './registro/registro.component';
 import { ListadoComponent } from './listado/listado.component';
 import { DetalleComponent } from './detalle/detalle.component';
 import { MenuVerticalComponent } from './menu-vertical/menu-vertical.component';
-
+import { EstadisticasComponent } from './estadisticas/estadisticas.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +23,8 @@ import { MenuVerticalComponent } from './menu-vertical/menu-vertical.component';
     RegistroComponent,
     ListadoComponent,
     DetalleComponent,
-    MenuVerticalComponent
+    MenuVerticalComponent,
+    EstadisticasComponent
   ],
   providers: [
     provideClientHydration(),

@@ -1,0 +1,52 @@
+<header class="py-3 mb-4 border-bottom border-top">
+    <div class="container d-flex flex-wrap justify-content-center">
+        <span class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none fs-1">Estadistica último mes</span>
+    </div>
+</header>
+<div class="container-fluid">
+    <table class="table table-responsive">
+        <thead>
+          <tr>
+            <th scope="col">Alarma</th>
+            <th scope="col">Cantidad de ejecuciones</th>
+            <th scope="col">Cantidad de veces que se pospuso</th>
+            <th scope="col">Cantidad de veces que se cumplió</th>
+            <th scope="col">Porcentaje de cumplimiento</th>
+          </tr>
+        </thead>
+        <tbody class="table-success">
+          <tr>
+            <td>
+                <div class="card">
+                    <div class="card-body">
+                    Gimnasio<br/>5:00 a.m.<br/>Lun, Mie, Vie<br/>Activa
+                    </div>
+                </div>
+            </td>
+            <td>10</td>
+            <td>2</td>
+            <td>8</td>
+            <td><mat-progress-bar mode="determinate" value="40"></mat-progress-bar></td>
+          </tr>
+          <tr class="spacer" aria-hidden="true">
+            <td colspan="5"></td>
+          </tr>
+          <tr>
+            <td>
+                <div class="card">
+                    <div class="card-body">
+                        Laboral<br/>6:30 a.m.<br/>Lun, Mar, Mie, Jue, Vie<br/>Activa
+                    </div>
+                </div>
+            </td>
+            <td>10</td>
+            <td>5</td>
+            <td>5</td>
+            <td><mat-progress-bar mode="determinate" value="40"></mat-progress-bar></td>
+          </tr>
+          <tr class="spacer" aria-hidden="true">
+            <td colspan="5"></td>
+          </tr>
+        </tbody>
+      </table>
+</div>
