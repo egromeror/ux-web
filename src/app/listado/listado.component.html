@@ -24,12 +24,13 @@
                 name="state"
                 aria-label="Estado de alarma"
                 value="activa"
+                disabled="true"
                 [hideSingleSelectionIndicator]="hideSingleSelectionIndicator()">
                 <mat-button-toggle value="activa">Activa</mat-button-toggle>
                 <mat-button-toggle value="inactiva">Inactiva</mat-button-toggle>
               </mat-button-toggle-group>
             </td>
-            <td><button mat-flat-button>Detalle</button></td>
+            <td><button mat-flat-button (click)="setDetalleAlarma()">Detalle</button></td>
           </tr>
           <tr class="spacer" aria-hidden="true">
             <td colspan="5"></td>
@@ -43,12 +44,13 @@
                 name="state"
                 aria-label="Estado de alarma"
                 value="activa"
+                disabled="true"
                 [hideSingleSelectionIndicator]="hideSingleSelectionIndicator()">
                 <mat-button-toggle value="activa">Activa</mat-button-toggle>
                 <mat-button-toggle value="inactiva">Inactiva</mat-button-toggle>
               </mat-button-toggle-group>
             </td>
-            <td><button mat-flat-button>Detalle</button></td>
+            <td><button mat-flat-button (click)="setDetalleAlarma()">Detalle</button></td>
           </tr>
           <tr class="spacer" aria-hidden="true">
             <td colspan="5"></td>
@@ -62,12 +64,13 @@
                 name="state"
                 aria-label="Estado de alarma"
                 value="inactiva"
+                disabled="true"
                 [hideSingleSelectionIndicator]="hideSingleSelectionIndicator()">
                 <mat-button-toggle value="activa">Activa</mat-button-toggle>
                 <mat-button-toggle value="inactiva">Inactiva</mat-button-toggle>
               </mat-button-toggle-group>
             </td>
-            <td><button mat-flat-button>Detalle</button></td>
+            <td><button mat-flat-button (click)="setDetalleAlarma()">Detalle</button></td>
           </tr>
           <tr class="spacer" aria-hidden="true">
             <td colspan="5"></td>

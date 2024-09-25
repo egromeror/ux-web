@@ -1,0 +1,33 @@
+<header class="py-3 mb-4 border-bottom border-top">
+    <div class="container d-flex flex-wrap justify-content-center">
+        <span class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none fs-1">Detalle de alarma</span>
+    </div>
+</header>
+
+<div class="container">
+    <p class="heigh-form-control">
+        <label>Tipo: </label>
+        <span class="form-control-text">Gimnasio</span>
+    </p>
+    <p class="heigh-form-control">
+        <label>Hora: </label>
+        <span class="form-control-text">5:00 a.m.</span>
+    </p>
+    <p class="heigh-form-control">
+        <label>Frecuencia: </label>
+        <span class="form-control-text">Lun, Mar, Mie, Jue, Vie</span>
+    </p>
+    <p class="heigh-form-control">
+        <label>Estado: </label>
+        <span class="form-control-text">
+            <mat-button-toggle-group
+            name="state"
+            aria-label="Estado de alarma"
+            value="activa"
+            disabled="true">
+            <mat-button-toggle value="activa">Activa</mat-button-toggle>
+            <mat-button-toggle value="inactiva">Inactiva</mat-button-toggle>
+          </mat-button-toggle-group>
+        </span>
+    </p>
+</div>

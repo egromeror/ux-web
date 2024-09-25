@@ -2,6 +2,7 @@ import {ChangeDetectionStrategy, Component, signal} from '@angular/core';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatButtonModule} from '@angular/material/button';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-listado',
@@ -12,6 +13,9 @@ import {MatButtonModule} from '@angular/material/button';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ListadoComponent {
+  
+  constructor(private router: Router){}
+
   hideSingleSelectionIndicator = signal(false);
   hideMultipleSelectionIndicator = signal(false);
 
@@ -21,5 +25,10 @@ export class ListadoComponent {
 
   toggleMultipleSelectionIndicator() {
     this.hideMultipleSelectionIndicator.update(value => !value);
+  }
+
+  setDetalleAlarma()
+  {
+    this.router.navigate([`/detalle`])
   }
 }
