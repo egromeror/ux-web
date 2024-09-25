@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.table-bordered {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.spacer td {
+    --bs-table-bg: transparent !important;
+  }
+
+.table-success{
+    --bs-table-bg: #cde5d756 !important;
+}
+
+tr{
+    line-height: 50px;
+}
+
+td,th{
+    text-align: center;
+}

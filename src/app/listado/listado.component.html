@@ -1,0 +1,77 @@
+<header class="py-3 mb-4 border-bottom border-top">
+    <div class="container d-flex flex-wrap justify-content-center">
+        <span class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none fs-1">Listado de alarmas</span>
+    </div>
+</header>
+<div class="container-fluid">
+    <table class="table table-responsive">
+        <thead>
+          <tr>
+            <th scope="col">Tipo</th>
+            <th scope="col">Hora</th>
+            <th scope="col">Frecuencia</th>
+            <th scope="col">Estado</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody class="table-success">
+          <tr>
+            <th scope="row">Gimnasio</th>
+            <td>5:00 a.m.</td>
+            <td>Lun, Mie, Vie</td>
+            <td>
+                <mat-button-toggle-group
+                name="state"
+                aria-label="Estado de alarma"
+                value="activa"
+                [hideSingleSelectionIndicator]="hideSingleSelectionIndicator()">
+                <mat-button-toggle value="activa">Activa</mat-button-toggle>
+                <mat-button-toggle value="inactiva">Inactiva</mat-button-toggle>
+              </mat-button-toggle-group>
+            </td>
+            <td><button mat-flat-button>Detalle</button></td>
+          </tr>
+          <tr class="spacer" aria-hidden="true">
+            <td colspan="5"></td>
+          </tr>
+          <tr>
+            <th scope="row">Laboral</th>
+            <td>6:30 a.m.</td>
+            <td>Lun, Mar, Mie, Jue, Vie</td>
+            <td>
+                <mat-button-toggle-group
+                name="state"
+                aria-label="Estado de alarma"
+                value="activa"
+                [hideSingleSelectionIndicator]="hideSingleSelectionIndicator()">
+                <mat-button-toggle value="activa">Activa</mat-button-toggle>
+                <mat-button-toggle value="inactiva">Inactiva</mat-button-toggle>
+              </mat-button-toggle-group>
+            </td>
+            <td><button mat-flat-button>Detalle</button></td>
+          </tr>
+          <tr class="spacer" aria-hidden="true">
+            <td colspan="5"></td>
+          </tr>
+          <tr>
+            <th scope="row">Reuniones</th>
+            <td>9:00 a.m.</td>
+            <td>Mie</td>
+            <td>
+                <mat-button-toggle-group
+                name="state"
+                aria-label="Estado de alarma"
+                value="inactiva"
+                [hideSingleSelectionIndicator]="hideSingleSelectionIndicator()">
+                <mat-button-toggle value="activa">Activa</mat-button-toggle>
+                <mat-button-toggle value="inactiva">Inactiva</mat-button-toggle>
+              </mat-button-toggle-group>
+            </td>
+            <td><button mat-flat-button>Detalle</button></td>
+          </tr>
+          <tr class="spacer" aria-hidden="true">
+            <td colspan="5"></td>
+          </tr>
+        </tbody>
+      </table>
+</div>
