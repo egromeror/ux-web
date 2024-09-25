@@ -17,9 +17,39 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 tr{
-    line-height: 50px;
+    line-height: 60px;
+}
+
+.heigh-form-control
+{
+    line-height: 60px;
 }
 
 td,th{
     text-align: center;
+}
+
+.mat-button-toggle-appearance-standard.mat-button-toggle-disabled.mat-button-toggle-checked {
+    background-color: #003459 !important;
+    color: white !important;
+}
+
+.mat-button-toggle-appearance-standard.mat-button-toggle-disabled .mat-pseudo-checkbox {
+    color: white !important;
+}
+
+.mat-mdc-unelevated-button:not(:disabled) {
+    background-color: #003459 !important;
+}
+
+label
+{
+    font-weight: bold;
+    width: 30%;
+}
+
+.form-control-text
+{
+    width: 70%;
+    display: inline-block;
 }

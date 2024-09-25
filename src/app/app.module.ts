@@ -8,6 +8,8 @@ import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { RegistroComponent } from './registro/registro.component';
 import { ListadoComponent } from './listado/listado.component';
+import { DetalleComponent } from './detalle/detalle.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { ListadoComponent } from './listado/listado.component';
     AppRoutingModule,
     InicioComponent,
     RegistroComponent,
-    ListadoComponent
+    ListadoComponent,
+    DetalleComponent
   ],
   providers: [
     provideClientHydration(),
