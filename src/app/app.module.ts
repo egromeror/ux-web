@@ -9,6 +9,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { RegistroComponent } from './registro/registro.component';
 import { ListadoComponent } from './listado/listado.component';
 import { DetalleComponent } from './detalle/detalle.component';
+import { MenuVerticalComponent } from './menu-vertical/menu-vertical.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DetalleComponent } from './detalle/detalle.component';
     InicioComponent,
     RegistroComponent,
     ListadoComponent,
-    DetalleComponent
+    DetalleComponent,
+    MenuVerticalComponent
   ],
   providers: [
     provideClientHydration(),

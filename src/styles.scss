@@ -53,3 +53,23 @@ label
     width: 70%;
     display: inline-block;
 }
+
+.menu
+{
+    display: inline-block;
+    width: 7%;
+    height: 100%;
+    float: left;
+    background: #EEEEEE;
+}
+
+.cuerpo{
+    display: inline-block;
+    width: 91%;
+    margin-left: 1%;
+}
+
+.nav-item{
+    font-size: xx-small !important;
+    text-align: center;
+}
