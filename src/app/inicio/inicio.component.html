@@ -6,7 +6,7 @@
         <form class="login-form">
             <mat-form-field class="campo-full-width">
               <mat-label>Email</mat-label>
-              <input class="my-custom-input" type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+              <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
                      placeholder="Ejemplo. correo@correo.com">
               <mat-hint>Ingrese su correo electronico</mat-hint>
               @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
@@ -18,26 +18,34 @@
             </mat-form-field>
             <mat-form-field class="campo-full-width">
                 <mat-label>Clave</mat-label>
-                <input class="my-custom-input" type="password" matInput 
+                <input type="password" matInput 
                        placeholder="********">
                 <mat-hint>Ingrese su clave de acceso</mat-hint>
             </mat-form-field>
-            <a href="#">Recuperar mi clave</a>
-            <span class="flex-container">
-                <a href="#" mat-button color="primary">Ver más</a>
-            </span>
-            
+            <span class="derecha-container">
+                <a href="#" mat-button color="primary">Recuperar mi clave</a>
+            </span>            
         </form>
     </mat-grid-tile>
-    <mat-grid-tile>1</mat-grid-tile>
-    <mat-grid-tile>2</mat-grid-tile>
-    <mat-grid-tile>3</mat-grid-tile>
-    <mat-grid-tile>4</mat-grid-tile>
-    <mat-grid-tile colspan="4">1</mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile>
+        <div class="centro-container">
+        <button mat-flat-button class="registrar-button" (click)="registroUsuario()">Registrar</button>
+        </div>    
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div class="centro-container">
+        <button mat-flat-button class="ingresar-button" (click)="loginUsuario()">Ingresar</button>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile colspan="4"></mat-grid-tile>
  </mat-grid-list>
+
+
   
 
 
 
 
-<button mat-flat-button (click)="loginUsuario()">Ingresar</button>

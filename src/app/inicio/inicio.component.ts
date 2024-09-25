@@ -44,4 +44,8 @@ export class InicioComponent {
   loginUsuario(){
     this.router.navigate([`/listado`])
   }
+
+  registroUsuario(){
+    this.router.navigate([`/registro`])
+  }
 }

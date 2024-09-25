@@ -9,12 +9,22 @@
    
   }
 
-  .my-custom-input {
-    background-color: #CDE5D7;
-  }
-
-  .flex-container {
+  .derecha-container {
     display: flex;
     justify-content: flex-end;
   }
 
+  .centro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .registrar-button {
+    width: 200px;
+    background-color: #5D737E;
+  }
+
+  .ingresar-button {
+    width: 200px;
+  }
