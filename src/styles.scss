@@ -17,7 +17,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 tr{
-    line-height: 60px;
+    line-height: 100%;
 }
 
 .heigh-form-control
@@ -27,6 +27,7 @@ tr{
 
 td,th{
     text-align: center;
+    vertical-align: middle;
 }
 
 .mat-button-toggle-appearance-standard.mat-button-toggle-disabled.mat-button-toggle-checked {
