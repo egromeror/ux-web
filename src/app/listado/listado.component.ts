@@ -3,11 +3,12 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatButtonModule} from '@angular/material/button';
 import { Router } from '@angular/router';
+import { MenuVerticalComponent } from '../menu-vertical/menu-vertical.component';
 
 @Component({
   selector: 'app-listado',
   standalone: true,
-  imports: [MatButtonToggleModule,MatCheckboxModule,MatButtonModule],
+  imports: [MatButtonToggleModule,MatCheckboxModule,MatButtonModule, MenuVerticalComponent],
   templateUrl: './listado.component.html',
   styleUrl: './listado.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

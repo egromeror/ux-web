@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
@@ -11,10 +10,11 @@ import { ListadoComponent } from './listado/listado.component';
 import { DetalleComponent } from './detalle/detalle.component';
 import { MenuVerticalComponent } from './menu-vertical/menu-vertical.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    EncabezadoComponent,
+    EncabezadoComponent
   ],
   imports: [
     BrowserModule,
@@ -23,8 +23,9 @@ import { MenuVerticalComponent } from './menu-vertical/menu-vertical.component';
     RegistroComponent,
     ListadoComponent,
     DetalleComponent,
-    MenuVerticalComponent
+    MenuVerticalComponent  
   ],
+  exports:[MenuVerticalComponent],
   providers: [
     provideClientHydration(),
     provideAnimationsAsync()
