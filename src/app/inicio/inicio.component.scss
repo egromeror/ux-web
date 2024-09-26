@@ -1,0 +1,30 @@
+.login-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .campo-full-width {
+    width: 100%;
+   
+  }
+
+  .derecha-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .centro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .registrar-button {
+    width: 200px;
+    background-color: #5D737E;
+  }
+
+  .ingresar-button {
+    width: 200px;
+  }

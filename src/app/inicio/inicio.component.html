@@ -1,2 +1,51 @@
-<p>inicio works!</p>
-<button mat-flat-button (click)="loginUsuario()">Ingresar</button>
+
+ <mat-grid-list cols="4" rowHeight="200px">
+    <mat-grid-tile colspan="4"></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile colspan="2"> 
+        <form class="login-form">
+            <mat-form-field class="campo-full-width">
+              <mat-label>Email</mat-label>
+              <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+                     placeholder="Ejemplo. correo@correo.com">
+              <mat-hint>Ingrese su correo electronico</mat-hint>
+              @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+                <mat-error>Por favor ingresa un email valido</mat-error>
+              }
+              @if (emailFormControl.hasError('required')) {
+                <mat-error>Email es <strong>requerido</strong></mat-error>
+              }
+            </mat-form-field>
+            <mat-form-field class="campo-full-width">
+                <mat-label>Clave</mat-label>
+                <input type="password" matInput 
+                       placeholder="********">
+                <mat-hint>Ingrese su clave de acceso</mat-hint>
+            </mat-form-field>
+            <span class="derecha-container">
+                <a href="#" mat-button color="primary">Recuperar mi clave</a>
+            </span>            
+        </form>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile>
+        <div class="centro-container">
+        <button mat-flat-button class="registrar-button" (click)="registroUsuario()">Registrar</button>
+        </div>    
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <div class="centro-container">
+        <button mat-flat-button class="ingresar-button" (click)="loginUsuario()">Ingresar</button>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile colspan="4"></mat-grid-tile>
+ </mat-grid-list>
+
+
+  
+
+
+
+
